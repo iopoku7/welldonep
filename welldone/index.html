@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial--scale=1.0">
+    <title>Welldone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="navbar">
+            
+            <div class="icon">
+                <img src="logo.png" alt="Company logo" class="logo-image">
+                <h2 class="logo"> Research Consult</h2>  
+                     </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a id="home" class="index.html" href="index.html">HOME</a></li>
+                    <li><a id="about" class="about.html" href="about.html">ABOUT</a></li>
+                    <li><a id="courses" class="courses.html" href="courses.html">COURSES</a></li>
+                    <li><a id="contact" class="contact.html" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input id="searchInput" type="text" placeholder="Search">
+                <button id="searchButton" class="search-button"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <script>
+                // Get references to the input and button elements
+                const searchInput = document.getElementById('searchInput');
+                const searchButton = document.getElementById('searchButton');
+            
+                // Add a click event listener to the search button
+                searchButton.addEventListener('click', function () {
+                    // Get the user's search query from the input field
+                    const query = searchInput.value;
+    
+                    if (query.trim() !== '') {
+                        alert('Searching for: ' + query);
+                    } else {
+                        alert('Please enter a search query.');
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+<div class="section-slideshow">
+    <div class="slideshow-container">
+        <div class="slideshow-slide">
+            <img src="graduation2.jpg" alt="Image 1">
+        </div>
+        
+        <div class="slide-content">
+            <h5>Welcome to Welldone Research Consult</h5>
+            <p>Welldone Research Consult: Empowering researchers with personalized support, advanced analytics, and comprehensive academic consulting for research excellence.</p>
+            <a href="courses.html" class="slide-button">View Courses</a>
+        </div>
+        
+    </div>
+</div>
+    
+
+    <div class="section-col">
+        <div class="row">
+            <div class="col2">
+                <h1>Welldone Research Consult</h1>
+                <p>Unlocking Discoveries, One Study at a Time.<br>
+                     Empowering Curiosity, Enriching Knowledge. <br>
+                     Where Ideas Transform into Insights. 
+                     <br>Your Partner in Exploring the Unknown. 
+                     Curious Minds, Expert Guidance. <br>
+                     Embark on a Quest for Knowledge with Us.<br>
+                      Nurturing Innovation, Fostering Excellence. <br>
+                      Igniting Ideas, Illuminating Minds.<br>
+                       Curiosity Ignited, Research Redefined. <br>
+                       Dive into the Realm of Inquiry with Welldone Research Consult.<br>
+                        Join us in the pursuit of understanding and innovation</p>
+                <a href="about.html" class="btn">Explore now &#8594;</a>
+            </div>
+            <div class="col2">
+                <img src="istockphoto-1335708681-612x612.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="column">
+            <h3>ACADEMIC RESEARCH ADVISORY</h3>
+            <button class="section-button" id="proposalBtn">Research Proposal</button>
+            <button class="section-button" id="literatureBtn">Literature Review</button>
+            <button class="section-button" id="methodBtn">Methodology</button>
+            <button class="section-button" id="dataBtn">Data Analysis</button>
+            <button class="section-button" id="collectionBtn">Data Collection</button>
+            <button class="section-button" id="transcriptBtn">Transcription</button>
+            <button class="section-button" id="manuBtn">Manuscript Publishing</button>
+        </div>
+
+        <div class="column" id="column2Content">
+            <h3>ACADEMIC RESEARCH SUPPORT</h3>
+            <p>
+                Welcome to Welldone Research Consult! At Welldone Consult we say, <br><br>
+                <strong> “Trust the big men.” </strong>
+                <br>
+                <br>
+                We specialize in comprehensive Dissertation Support services catering to Bachelors, Masters, and PhD students.
+                <br> From research proposals to data analysis, we've got you covered.<br>
+                 Our Business Advisory services, including market research and business plan development, pave the way for your entrepreneurial triumphs. Elevate your endeavors with Welldone Research Consult today.
+                 <br>
+                 <br>
+                 <br>
+
+
+                    Our Additional Services:<br>
+                    - Crafted Surveys for In-Depth Insights<br>
+                    - Uncover Meaning with Qualitative Data Analysis<br>
+                    - Crunch Numbers Meaningfully with Quantitative Data Analysis<br>
+                    - Expertise in Diverse Regression Analyses, including Non-Linear & Ridge<br>
+                    - Decode Trends through Time Series Analysis<br>
+                    - Empowerment through Research Trainingrmatting guidelines.<br>
+                    <br>
+                     Our aim is to help you prepare for a successful final defense of your dissertation or thesis.
+                     <br>
+                     <br>
+            </p>
+        </div>
+        <div class="column">
+            <h3>BUSINESS CONSULTING</h3>
+            <button class="section-button" id="marketBtn">Market Research</button>
+            <button class="section-button" id="planBtn">Business Plan/Proposal</button>
+            <button class="section-button" id="trainBtn">Training and Development</button>
+        </div>
+        
+        
+    </div>
+    
+        <section class="services">
+            <div class="service">
+                <img src="istockphoto-1304915362-612x612.jpg" alt="Service 1">
+                <h8>SPSS</h8>
+                <p>We provide expert assistance in using SPSS (Statistical Package for the Social Sciences) for your data analysis needs. Whether it's data cleaning, statistical modeling, or reporting, our team has you covered.</p>
+            </div>
+            <div class="service">
+                <img src="library.jpeg" alt="Service 1">
+                <h8>STATA</h8>
+                <p>Need assistance with STATA software for data analysis and visualization? Our experts can help you navigate and harness the power of STATA for your research projects.</p>
+            </div>
+            <div class="service">
+                <img src="istockphoto-1335708681-612x612.jpg" alt="Service 1">
+                <h8>Qualitative Data Analysis</h8>
+                <p>If your research involves qualitative data, we offer specialized qualitative data analysis services. We can help you make sense of textual and non-numeric data through coding, thematic analysis, and interpretation.</p>
+            </div>
+            <div class="service">
+                <img src="graduation.jpeg" alt="Service 1">
+                <h8>Research Training</h8>
+                <p>Our training programs are designed to empower researchers at all levels. Whether you're a beginner looking to understand research fundamentals or an advanced researcher seeking to enhance your skills, our training sessions cater to your needs.</p>
+            </div>
+            <div class="service">
+                <img src="bk.jpeg" alt="Service 1">
+                <h8>Python</h8>
+                <p>In addition to traditional statistical software, we also offer training and support for Python, a versatile programming language widely used for data analysis and machine learning.</p>
+            </div>
+            <div class="service">
+                <img src="books.jpeg" alt="Service 1">
+                
+            </div>
+        </section>
+
+    </div>
+    
+    <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="logo - Copy.png" alt="Company Logo">
+        </div>
+        <div class="footer-info">
+            <h4>Contact Us</h4>
+            <p>Email: pahiaba7@gmail.com</p>
+            <p>Phone: +233 241303273/ +233 208593167</p>
+            <p>Accra-Ghana</p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="https://www.instagram.com/welldone_researchconsult/"><ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100091682073102"><ion-icon name="logo-facebook"></ion-icon>
+           
+            </a>
+            
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2023 Welldone Research Consult. All rights reserved.
+    </div>
+</footer>
+
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

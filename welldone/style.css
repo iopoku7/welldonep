@@ -1,0 +1,575 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:#f0eaea;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color:white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+}
+
+.navbar .icon {
+    display:block;
+    align-items: center;
+}
+
+.logo-image {
+    width: 120px;
+    height: 70px;
+    margin:0 auto;
+    margin-left: 45px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    margin-left: 40px;
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: orangered;
+}
+
+/* styles.css */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: orangered;
+    color: white;
+    border: none; /* Removed border property */
+    padding: 8px 16px; /* Added horizontal padding */
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px; /* Added some spacing between input and button */
+}
+
+
+/* Slideshow styles */
+
+/* Style for the slideshow container */
+/* Slideshow container */
+.section-slideshow{
+    padding: 0px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto; /* Center the slideshow horizontally */
+}
+
+/* Style for individual slides */
+.slideshow-slide {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the slide horizontally */
+}
+
+/* Style for images inside slides */
+.slideshow-slide img {
+    width: 100%; /* Make the image fit the width of the slide container */
+    height: 500px; /* Maintain the aspect ratio */
+}
+
+/* Style for slide content */
+.slide-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the content */
+    background-color: white; /* Semi-transparent background */
+    color: black; /* Text color on the slide content */
+    padding: 20px;
+    text-align: center; /* Center text content */
+    border-radius: 5px;
+    transition: opacity 0.3s ease; /* Smooth fade-in transition for content */
+    max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+/* Style for slide headings */
+.slide-content h5 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: orangered;
+}
+
+/* Style for slide text content */
+.slide-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Style for slide buttons */
+.slide-button {
+    background-color: orangered; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    text-decoration: none;
+    display: inline-block; /* Make the button an inline element */
+    margin-top: 15px; /* Add some spacing between the text and button */
+}
+
+/* Hover effect for slide buttons */
+.slide-button:hover {
+    background-color: black; /* Button background color on hover */
+}
+
+
+/* Section styles */
+.section-col {
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.col2 {
+    flex: 1;
+    background-color: white;
+    margin: -25px;
+    height: 550px;
+    padding: 0px;
+}
+
+.col2 h1 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding-top:80px ;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: orangered;
+
+}
+.col2 p{
+    margin: 50px;
+    font-size: 17px;
+    padding-top: flex;
+}
+.col2 img{
+  width:100%;
+  height: 550px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.btn:hover {
+    background-color: #e64000;
+}
+/* CSS for Three Columns */
+/* Style for the parent container */
+.section{
+    display: flex;
+    justify-content: space-between; /* This will evenly distribute the columns */
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #f0eaea; /* Align columns at the top */
+}
+
+/* Style for each individual column */
+.column {
+    flex:content; /* Allow columns to grow equally within the parent */
+    border: 1px solid #f0eaea; /* Add borders for clarity */
+    border-radius: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 25px;
+    padding-top: 30px;
+    min-width: 30%;
+    background-color: white;
+    
+}
+
+/* Additional styling for headings and buttons */
+.column h3{
+    margin-top: 0;
+    align-items: center;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+.column strong{
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.section-button {
+    display: block;
+    width: 250px; /* Set the desired width for all buttons */
+    padding: 10px 20px;
+    background-color: orangered; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.section-button:hover {
+    background-color: black;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.service{
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    padding: 30px
+
+}
+.service img{
+    max-width: 100%;
+    height: 400;
+}
+.service-img-h8{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+/* Footer styles */
+/* Style for the footer */
+footer {
+    background-color: orangered;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+/* Style for the footer logo */
+.footer-logo img {
+    max-width: 100px;
+}
+
+/* Style for the footer info and social links */
+.footer-info, .footer-social {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.footer-info h4, .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+/* Style for the social media icons */
+.footer-social a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Style for the footer bottom text */
+.footer-bottom {
+    background-color:orangered;
+    padding: 10px 0;
+    font-size: 17px;
+    
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+/* Add this to your style.css file */
+
+/* Style for the Contact Us page container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style for the form */
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: orangered;
+}
+
+/* You can add more styling as needed */
+
+/* Add this to your style.css file */
+
+/* Style for the About Us page container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding:20px;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding:20px;
+}
+
+/* Style for the images */
+.about-image {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* You can add more styling as needed */
+/* Add this CSS to your style.css file or include it in your HTML head */
+
+/* Main container styling */
+.courses {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.courses h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.courses h2 {
+    font-size: 24px;
+    color: orangered;
+    margin-top: 20px;
+}
+
+/* Paragraph styles */
+.courses p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* List styles */
+ .courses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courses li {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Optional hover effect for list items */
+.courses li:hover {
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.section-about{
+    padding: 0px;
+}
+
+.row-col {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    
+}
+.col3 {
+    flex: 1;
+    background-color: #f0eaea;
+    margin: -25px;
+    height: 550px;
+    padding: 0px;
+}
+
+.col3 h1 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding-top:80px ;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: orangered;
+
+}
+.col3 p{
+    margin: 50px;
+    font-size: 17px;
+    padding-top: flex;
+}
+.col3 img{
+  width:100%;
+  height: 550px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
